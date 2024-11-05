@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="payment-container">
+    <div class="step-progress">
+        <div class="step completed">
+            <span class="step-number">✔</span>
+            <span class="step-label">Shipping</span>
+        </div>
+        <div class="line"></div>   
+        <div class="step active">
+            <span class="step-number">2</span>
+            <span class="step-label">Payment</span>
+        </div>
+        <div class="line0"></div> 
+        <div class="step completed">
+            <span class="step-number">3</span>
+            <span class="step-label">Confirmation</span>
+        </div>
+    </div>
+    <h2>Payment details</h2>
+
+    <div class="section-title">Credit card information</div>
+    <div class="form-group">
+        <label for="card-name">Name on card</label>
+        <input type="text" id="card-name">
+    </div>
+
+    
+    <div class="form-group credit-card-group">
+        <label for="credit-card-number">Credit card number</label>
+        <div class="input-container">
+            <input type="text" id="credit-card-number">
+            <div class="accepted-cards">
+                <img src="https://d28wu8o6itv89t.cloudfront.net/images/Visadebitcardpng-1599584312349.png" alt="Visa">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd7AgvPTXlVcC2e66eEZRZ2YZuaao502iwVw&s" alt="MasterCard">
+                <img src="https://e7.pngegg.com/pngimages/745/624/png-clipart-american-express-logo-credit-card-payment-credit-card-blue-text-thumbnail.png" alt="American Express">
+                <img src="https://logowik.com/content/uploads/images/discover-card4683.jpg" alt="Discover">
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <div class="form-inline">
+        <div class="form-group">
+            <label for="security-code">Security code</label>
+            <input type="text" id="security-code">
+        </div>
+        <div class="form-group">
+            <label for="expiry-date">Expiry date</label>
+            <select id="expiry-month">
+                <option>month</option>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+                <option>04</option>
+                <option>05</option>
+                <option>06</option>
+                <option>07</option>
+                <option>08</option>
+                <option>09</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+            </select>
+            <select id="expiry-year">
+                <option>year</option>
+                <option>2024</option>
+                <option>2025</option>
+                <option>2026</option>
+                <option>2027</option>
+                <option>2028</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="section-title">Billing information</div>
+    <div class="form-group">
+        <label for="first-name">First name</label>
+        <input type="text" id="first-name">
+    </div>
+
+    <div class="form-group">
+        <label for="last-name">Last name</label>
+        <input type="text" id="last-name">
+    </div>
+
+    <div class="form-group">
+        <label for="billing-address">Billing address</label>
+        <input type="text" id="billing-address">
+    </div>
+
+    <div class="form-group">
+        <label for="city">City</label>
+        <input type="text" id="city">
+    </div>
+
+    <div class="form-inline">
+        <div class="form-group">
+            <label for="zip">Zip</label>
+            <input type="text" id="zip">
+        </div>
+        <div class="form-group">
+            <label for="country">Country</label>
+            <input type="text" id="country">
+        </div>
+    </div>
+
+    <button class="submit-btn">Submit payment</button>
+</div>
+</body>
+</html>
